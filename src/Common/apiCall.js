@@ -13,7 +13,7 @@ const apiCall = async (url, method = "GET", data = null, headers = {}) => {
     }
 
     const response = await fetch(url, options);
-console.log("response>",response);
+    console.log("response>", response);
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
